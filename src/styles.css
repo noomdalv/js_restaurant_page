@@ -1,16 +1,36 @@
+body {
+	background-color: #161516;
+	margin: auto;
+}
+
+nav {
+	background-color: #333;
+	padding-right: 50px;
+	font-family: Helvetica;
+}
+
+#navTitle {
+	float: left;
+	margin: 10px 50px;
+	color: white;
+	font-size: 34px;
+	font-weight: 100;
+}
+
 #navList {
 	list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
 }
 
 .nav-element {
-	float: left;
+	float: right;
+	margin-right: 20px;
+	font-size: 26px;
 }
 
-.nav-element a {
+.nav-element {
 	display: block;
   color: white;
   text-align: center;
@@ -18,6 +38,17 @@
   text-decoration: none;
 }
 
-.nav-element a:hover {
+.nav-element:hover {
   background-color: #111;
+}
+
+#home-container {
+	color: white;
+}
+#img-home {
+	margin-top: 50px;
+	border: solid gray 1px;
+}
+#home-heading {
+	text-align:	center;
 }
