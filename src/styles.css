@@ -12,10 +12,10 @@ nav {
 
 #navTitle {
 	float: left;
-	margin: 10px 50px;
+	margin: 10px 0 0 150px;
 	color: white;
-	font-size: 34px;
-	font-weight: 100;
+	font-size: 28px;
+	font-family: Georgia, serif;
 }
 
 #navList {
@@ -86,7 +86,15 @@ nav {
 
 /*CONTACT CONTENT*/
 #contact-container {
-	border: solid white 1px;
 	margin: 100px auto;
-	font-size: 26px
+	border: solid gray 1px;
+	padding: 20px 40px;
+	background-color: #232323;
+	font-size: 24px;
+	font-family: Georgia, serif;
+}
+
+#contact-container a {
+	text-decoration: none;
+	color: lightblue
 }

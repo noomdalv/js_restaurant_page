@@ -8,7 +8,7 @@ const loadIndex = () => {
 	const loadPage = () => {
 		const navTitle = document.createElement("h3");
 		navTitle.id = "navTitle"
-		navTitle.innerHTML = "RESTAURANT";
+		navTitle.innerHTML = "Restaurant JavaScript";
 
 		const navBar = document.createElement('nav');
 		const navArr = ["Contact", "Menu", "Home"];
