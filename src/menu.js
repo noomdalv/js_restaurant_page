@@ -1,6 +1,6 @@
 const loadMenu = () => {
-	let content = document.getElementById("content")
-	let template = `<div id="menu-container">
+  const content = document.getElementById('content');
+  const template = `<div id="menu-container">
 								<div class"menu-box">
 									<img src="../src/img/d1_mongolian_meatball_ramen.jpg" alt="meatball_ramen">
 									<p>Mongolian Meatball Ramen</p>
@@ -25,8 +25,8 @@ const loadMenu = () => {
 									<img src="../src/img/d6_thai_basil_beef.jpg" alt="thasil_beef">
 									<p>Thai Basil Beef</p>
 								</div>
-							</div>`
-	content.innerHTML = template;
+							</div>`;
+  content.innerHTML = template;
 };
 
 export default loadMenu;
