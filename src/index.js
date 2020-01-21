@@ -1,32 +1,46 @@
-const loadIndex = (() => {
-	const content = document.createElement('div');
-	document.body.appendChild(content);
+import loadHome from './home.js'
+import loadMenu from './menu.js'
+import loadContact from './contact.js'
 
-	//NAVBAR CREATION
-	const navTitle = document.createElement("h3");
-	navTitle.id = "navTitle"
-	navTitle.innerHTML = "RESTAURANT";
+const loadIndex = () => {
 
-	const navBar = document.createElement('nav');
-	const navArr = ["Contact", "Menu", "Home"];
-	const navList = document.createElement('ul');
-	navList.id = "navList";
-	content.appendChild(navBar);
-	navBar.appendChild(navTitle);
-	navBar.appendChild(navList);
+	//PageLoad, creates Navbar + Content containers
+	const loadPage = () => {
+		const navTitle = document.createElement("h3");
+		navTitle.id = "navTitle"
+		navTitle.innerHTML = "RESTAURANT";
 
-	for (let i = 0; i < navArr.length; i++) {
-		let li = `<li class="nav-element" id="${navArr[i].toLowerCase()}-link">${navArr[i]}</li>`
+		const navBar = document.createElement('nav');
+		const navArr = ["Contact", "Menu", "Home"];
+		const navList = document.createElement('ul');
+		navList.id = "navList";
+		document.body.appendChild(navBar);
+		navBar.appendChild(navTitle);
+		navBar.appendChild(navList);
 
-		navList.innerHTML += li;
+		//Navbar Link Creation
+		for (let i = 0; i < navArr.length; i++) {
+			let li = `<li class="nav-element" id="link-${navArr[i].toLowerCase()}">${navArr[i]}</li>`
+			navList.innerHTML += li;
+		}
+
+		//MAIN CONTAINER
+		const content = document.createElement('div');
+		content.id = "content"
+		document.body.appendChild(content);
 	}
 
-	//HOMEPAGE CONTENT
+	//EventListeners for links
+	const loadEvents = () => {
+		document.getElementById('link-home').addEventListener("click", function(){ loadHome() });
+		document.getElementById('link-menu').addEventListener("click", function(){ loadMenu() } );
+		document.getElementById('link-contact').addEventListener("click", function(){ loadContact() });
+	}
 
-	let template = `<div id="home-container">
-										<img src="https://stock.rtl.lu/rtl/800/rtl2008.lu/nt/p/2018/07/14/11/62cdc377b7c1e733b373d3ac719454eb.jpeg" id="img-home" alt="homeImg">
-										<h2 id="home-heading">Enjoy Our Delicious Meals!</h2>
-									</div>`
-	content.innerHTML += template;
+	return { loadPage, loadEvents }
+};
 
-})();
+const loader = loadIndex();
+loader.loadPage();
+loader.loadEvents();
+loadHome();
