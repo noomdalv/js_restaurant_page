@@ -10,7 +10,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/noomdalv/js_restaurant_page/page_design/dist/index.html)
+[Live Demo Link](https://raw.githack.com/noomdalv/js_restaurant_page/development/dist/index.html)
 
 
 ## Getting Started
