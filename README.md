@@ -12,10 +12,9 @@
 
 [Live Demo Link](https://raw.githack.com/noomdalv/js_restaurant_page/development/dist/index.html)
 
+## App Screenshot
+![screenshot](https://i.imgur.com/qumadH4.png?1)
 
-## Getting Started
-
-To get a local copy up and running follow these simple example steps.
 
 ### Setup
 
@@ -23,6 +22,10 @@ Open a terminal window, go to the location you'd like to add the project and the
 
 ```console
 git clone https://github.com/noomdalv/js_restaurant_page.git
+```
+
+```console
+cd js_restaurant_page
 ```
 
 ## Author
@@ -39,4 +42,3 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](lic.url) licensed.
-​
