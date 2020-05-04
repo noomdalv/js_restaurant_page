@@ -33,6 +33,7 @@ cd js_restaurant_page
 👤 **Vladimir Luna**
 
 - Github: [@noomdalv](https://github.com/noomdalv)
+- Email: vladlunasan@gmail.com
 
 ## Show your support
 
